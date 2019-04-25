@@ -77,6 +77,7 @@ describe('Account', function() {
        .send(account)
        .set('token', token)
        .end(function(err, res) {
+         console.log(err)
          expect(err).to.be.null;
 
          expect(res).to.have.status(201);

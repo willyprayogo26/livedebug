@@ -9,5 +9,6 @@ router.get('/login', userController.login);
 router.post('/verify', userController.verify);
 
 router.use('/accounts', account);
-router.get('/transactions', transaction);
+router.use('/transactions', transaction);
 
+module.exports = router

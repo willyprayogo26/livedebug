@@ -34,6 +34,7 @@
 
 <script>
 export default {
+  name: 'user',
   props: ['name', 'occupation', 'stats', 'picture', 'id'],
 
   methods: {
